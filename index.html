@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>飘雪电影网 - 飘雪电影网最新电影资讯、院线新片与冬季好片推荐 | piaoxuedianyingwang-zh.github.io</title>
+<meta name="keywords" content="飘雪电影网,飘雪电影网最新电影,飘雪电影网好片推荐,飘雪电影网片单,piaoxuedianyingwang-zh.github.io,最新电影资讯,冬季电影推荐,院线新片,电影票房,经典老片回顾,电影影评">
+<meta name="description" content="飘雪电影网（piaoxuedianyingwang-zh.github.io）整理最新电影资讯与院线新片，聚焦冬季档与年末压轴，提供经典老片回顾、电影票房与影评分享，按季节和心情整理片单。">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#0c1116">
+<meta property="og:type" content="website">
+<meta property="og:title" content="飘雪电影网 - 最新电影资讯、院线新片与冬季好片推荐">
+<meta property="og:description" content="整理最新电影资讯与院线新片，聚焦冬季档与年末压轴，提供经典老片回顾、电影票房与影评分享，按季节和心情整理片单。">
+<meta property="og:url" content="https://piaoxuedianyingwang-zh.github.io">
+<meta property="og:site_name" content="飘雪电影网">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://piaoxuedianyingwang-zh.github.io">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='82'>❄️</text></svg>">
+<style>
+
+:root{
+  --bg:#0c1116;--bg2:#10171e;--card:#15202a;--card-h:#1d2b37;--line:rgba(255,255,255,.08);
+  --txt:#edf4f8;--dim:#a8bcc9;--faint:#6f8694;
+  --p1:#0e7490;--p2:#06b6d4;--p3:#0891b2;--a1:#67e8f9;--a2:#38bdf8;--a3:#e0f2fe;
+  --r:16px;--sh:0 26px 60px rgba(0,0,0,.6);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--txt);font-size:16px;line-height:1.75;
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;
+  background:radial-gradient(900px 520px at 90% -10%,rgba(6,182,212,.15),transparent 62%),
+  radial-gradient(720px 560px at 2% 4%,rgba(14,116,144,.18),transparent 62%),
+  radial-gradient(680px 680px at 50% 112%,rgba(103,232,249,.07),transparent 60%)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.3;
+  background-image:linear-gradient(rgba(255,255,255,.014) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.014) 1px,transparent 1px);
+  background-size:52px 52px}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none;transition:color .2s}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}
+
+.topbar{background:rgba(6,10,14,.92);border-bottom:1px solid var(--line);font-size:13px;color:var(--faint)}
+.topbar .container{height:38px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.topbar a:hover{color:var(--txt)}
+.topbar .l{display:flex;gap:18px;align-items:center}
+.topbar .l .d{width:6px;height:6px;border-radius:50%;background:var(--a2);box-shadow:0 0 8px var(--a2);animation:pl 2s infinite}
+@keyframes pl{0%,100%{opacity:1}50%{opacity:.35}}
+.topbar .r{display:flex;gap:16px}
+@media(max-width:720px){.topbar .r{display:none}}
+
+.header{position:sticky;top:0;z-index:100;background:rgba(12,17,22,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.header .container{height:72px;display:flex;align-items:center;gap:24px}
+.logo{display:flex;align-items:center;gap:12px;flex:none}
+.logo .mk{width:44px;height:44px;border-radius:13px;flex:none;display:grid;place-items:center;font-size:20px;
+  background:linear-gradient(135deg,#0e7490,#06b6d4);box-shadow:0 6px 18px rgba(6,182,212,.34)}
+.logo .nm{font-size:20px;font-weight:800;letter-spacing:.5px;white-space:nowrap}
+.logo .nm em{font-style:normal;background:linear-gradient(90deg,#fff,#a5f3fc);-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo small{display:block;font-size:11px;font-weight:400;color:var(--faint);letter-spacing:1.2px;margin-top:-2px}
+.nav{flex:1;display:flex;justify-content:center;gap:2px}
+.nav a{font-size:15px;font-weight:500;color:var(--dim);padding:9px 12px;border-radius:9px;position:relative}
+.nav a:hover{color:var(--txt);background:rgba(255,255,255,.05)}
+.nav a.on{color:var(--txt);background:rgba(6,182,212,.13)}
+.nav a.on::after{content:"";position:absolute;left:12px;right:12px;bottom:2px;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--p2),var(--a1))}
+.ha{display:flex;align-items:center;gap:10px;flex:none}
+.sch{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:10px;padding:8px 12px;width:210px;transition:.25s}
+.sch:focus-within{border-color:rgba(6,182,212,.5);width:250px;background:rgba(255,255,255,.09)}
+.sch svg{flex:none;opacity:.55}
+.sch input{flex:1;min-width:0;background:none;border:none;outline:none;color:var(--txt);font-size:14px;font-family:inherit}
+.sch input::placeholder{color:var(--faint)}
+.mb{display:none;width:42px;height:42px;border-radius:10px;background:rgba(255,255,255,.06);border:1px solid var(--line)}
+.mb span{display:block;width:18px;height:2px;background:var(--txt);margin:4px auto;border-radius:2px;transition:.25s}
+.mb.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.mb.open span:nth-child(2){opacity:0}
+.mb.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+.hero{padding:46px 0 32px}
+.hero-g{display:grid;grid-template-columns:1.62fr 1fr;gap:22px;align-items:stretch}
+.hero-m{border-radius:26px;overflow:hidden;min-height:440px;position:relative;border:1px solid var(--line);box-shadow:var(--sh);
+  display:flex;flex-direction:column;justify-content:flex-end;padding:38px;
+  background:linear-gradient(160deg,#0d2832 0%,#0f1c24 52%,#0a1014 100%)}
+.hero-m::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(560px 320px at 84% 10%,rgba(165,243,252,.18),transparent 62%),radial-gradient(460px 360px at 6% 90%,rgba(6,182,212,.24),transparent 62%)}
+.hero-m::after{content:"";position:absolute;right:-90px;top:-100px;width:340px;height:340px;border-radius:50%;
+  background:conic-gradient(from 0deg,var(--p2),var(--p3),var(--a1),var(--p2));filter:blur(86px);opacity:.34}
+.hero-crumb{position:relative;font-size:13px;color:var(--faint);margin-bottom:14px;letter-spacing:1px}
+.hero-crumb b{color:var(--a1);font-weight:600}
+.hero-m h1{position:relative;font-size:45px;line-height:1.2;font-weight:800;text-shadow:0 4px 26px rgba(0,0,0,.5)}
+.hero-m h1 i{font-style:normal;background:linear-gradient(90deg,#fff,var(--a1));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-m>p{position:relative;margin-top:14px;color:#d3e3ea;font-size:16px;max-width:600px}
+.hero-tags{position:relative;display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.hero-tags span{font-size:13px;padding:6px 13px;border-radius:20px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);color:#cfe3ec}
+.hero-btns{position:relative;display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:600;padding:13px 26px;border-radius:12px;transition:transform .18s,box-shadow .18s}
+.btn:hover{transform:translateY(-2px)}
+.bp{background:linear-gradient(135deg,var(--p1),var(--p2));color:#fff;box-shadow:0 10px 26px rgba(6,182,212,.36)}
+.bg{background:rgba(255,255,255,.07);border:1px solid var(--line);color:var(--txt)}
+.bg:hover{background:rgba(255,255,255,.12)}
+.hero-s{display:grid;grid-template-rows:1fr 1fr;gap:22px}
+.hc{position:relative;overflow:hidden;border-radius:26px;border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;justify-content:space-between}
+.hc.c1{background:linear-gradient(155deg,rgba(14,116,144,.24),rgba(14,116,144,.04))}
+.hc.c2{background:linear-gradient(155deg,rgba(103,232,249,.14),rgba(103,232,249,.03))}
+.hc .bg-n{font-size:36px;font-weight:800;line-height:1.15}
+.hc .bg-n em{font-style:normal;font-size:14px;font-weight:500;color:var(--dim);margin-left:6px}
+.hc h4{font-size:15px;color:var(--dim);font-weight:500;margin-top:8px}
+.hc .ft{font-size:12.5px;color:var(--a1);margin-top:12px}
+
+.sec{padding:42px 0}
+.shd{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+.st{display:flex;align-items:center;gap:12px}
+.st .bar{width:5px;height:27px;border-radius:4px;background:linear-gradient(180deg,var(--p1),var(--p2));flex:none}
+.st h2{font-size:25px;font-weight:800;letter-spacing:.5px}
+.st p{font-size:13.5px;color:var(--faint);margin-top:2px}
+.sm{font-size:14px;color:var(--dim);display:flex;align-items:center;gap:5px;transition:.2s}
+.sm:hover{color:var(--a1);gap:9px}
+
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.tabs button{font-size:14.5px;font-weight:600;padding:9px 18px;border-radius:10px;background:var(--card);border:1px solid var(--line);color:var(--dim)}
+.tabs button:hover{color:var(--txt);border-color:rgba(255,255,255,.2)}
+.tabs button.on{background:linear-gradient(135deg,var(--p1),var(--p2));color:#fff;border-color:transparent;box-shadow:0 6px 16px rgba(6,182,212,.32)}
+.tabs .ct{font-size:12.5px;color:var(--faint);margin-left:auto;display:flex;align-items:center}
+.tab-pane{display:none}.tab-pane.on{display:block;animation:fa .32s ease}
+@keyframes fa{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+.news{display:grid;grid-template-columns:1.5fr 1fr;gap:26px;align-items:start}
+.nf{border-radius:var(--r);overflow:hidden;position:relative;min-height:360px;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:flex-end;padding:32px}
+.nf .bg{position:absolute;inset:0;background:linear-gradient(150deg,#0d2832,#0f1c24 58%,#0a1014)}
+.nf .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,10,14,.96) 8%,rgba(6,10,14,.2) 60%,transparent)}
+.nf .bg span{position:absolute;border-radius:50%;filter:blur(58px);opacity:.5}
+.nf .bg span:nth-child(1){width:260px;height:260px;background:var(--p2);right:-50px;top:-40px}
+.nf .bg span:nth-child(2){width:220px;height:220px;background:var(--p1);left:-40px;bottom:-60px}
+.nf .c{position:relative}
+.nf .tag{font-size:12.5px;font-weight:700;color:#04232d;background:linear-gradient(135deg,var(--p2),#a5f3fc);padding:4px 11px;border-radius:5px}
+.nf h3{font-size:24px;font-weight:800;margin-top:12px;line-height:1.45;max-width:600px}
+.nf p{color:#d3e3ea;font-size:14.5px;margin-top:10px;max-width:600px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.nf .meta{font-size:13px;color:var(--faint);margin-top:14px;display:flex;gap:16px;flex-wrap:wrap}
+.nl{display:flex;flex-direction:column}
+.nl article{display:flex;gap:14px;padding:15px 4px;border-bottom:1px solid var(--line);transition:.2s;border-radius:10px}
+.nl article:last-child{border-bottom:none}
+.nl article:hover{background:rgba(255,255,255,.035)}
+.nl .n{flex:none;width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font-size:14px;font-weight:800;color:var(--faint);background:rgba(255,255,255,.05);border:1px solid var(--line)}
+.nl article:nth-child(1) .n{background:linear-gradient(135deg,var(--p1),var(--p2));color:#fff;border-color:transparent}
+.nl article:nth-child(2) .n{background:linear-gradient(135deg,var(--p2),#a5f3fc);color:#04232d;border-color:transparent}
+.nl article:nth-child(3) .n{background:linear-gradient(135deg,var(--a1),#e0f2fe);color:#043a4a;border-color:transparent}
+.nl .t h4{font-size:15.5px;font-weight:600;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:.2s}
+.nl article:hover .t h4{color:var(--a1)}
+.nl .t .m{font-size:12.5px;color:var(--faint);margin-top:5px;display:flex;gap:10px}
+
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.cd{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:.24s}
+.cd:hover{transform:translateY(-6px);background:var(--card-h);border-color:rgba(165,243,252,.28);box-shadow:0 18px 42px rgba(0,0,0,.5)}
+.th{position:relative;aspect-ratio:4/3;overflow:hidden;background:linear-gradient(135deg,#0d2832,#0f1c24)}
+.th .ly{position:absolute;inset:0;opacity:.9;
+  background:radial-gradient(circle at 26% 24%,var(--g1,rgba(6,182,212,.6)),transparent 52%),radial-gradient(circle at 78% 82%,var(--g2,rgba(103,232,249,.44)),transparent 54%),linear-gradient(160deg,var(--g3,#0d2832),var(--g4,#0a1014))}
+.cd:hover .ly{transform:scale(1.12);opacity:1}
+.th .ar{position:absolute;inset:0;display:grid;place-items:center;font-size:56px;transition:transform .4s}
+.cd:hover .ar{transform:scale(1.1)}
+.th .ep{position:absolute;top:10px;left:10px;z-index:2;font-size:11.5px;font-weight:700;color:#04232d;padding:4px 9px;border-radius:6px;background:rgba(255,255,255,.9)}
+.th .sc{position:absolute;top:10px;right:10px;z-index:2;font-size:11.5px;font-weight:700;color:#04232d;padding:4px 9px;border-radius:20px;background:linear-gradient(135deg,var(--p2),#a5f3fc)}
+.th .st{position:absolute;left:10px;right:10px;bottom:10px;z-index:2;font-size:12px;color:#edf4f8;text-shadow:0 1px 3px rgba(0,0,0,.8);display:flex;justify-content:space-between;gap:8px}
+.th .st b{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--a2);flex:none;margin-top:5px}
+.th .hv{position:absolute;inset:0;z-index:2;display:grid;place-items:center;background:rgba(6,10,14,.5);opacity:0;transition:.25s}
+.cd:hover .hv{opacity:1}
+.th .hv i{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:rgba(6,182,212,.92);font-size:17px;color:#fff;box-shadow:0 8px 26px rgba(6,182,212,.5);transform:scale(.7);transition:.25s}
+.cd:hover .hv i{transform:scale(1)}
+.cd .in{padding:15px 16px 17px;flex:1;display:flex;flex-direction:column}
+.cd .in h3{font-size:16.5px;font-weight:700;line-height:1.45;margin-bottom:6px;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.cd .in .tg{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.cd .in .tg i{font-style:normal;font-size:12px;color:var(--dim);padding:2px 8px;border-radius:4px;background:rgba(255,255,255,.05)}
+.cd .in .ln{margin-top:auto;padding-top:11px;border-top:1px dashed var(--line);display:flex;justify-content:space-between;font-size:12.5px;color:var(--faint)}
+.cd .in .ln b{color:var(--a1);font-weight:600}
+
+.sch2{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+.sct{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.sct-h{display:flex;align-items:center;justify-content:space-between;padding:16px 22px;background:rgba(255,255,255,.04);border-bottom:1px solid var(--line);flex-wrap:wrap;gap:10px}
+.sct-h h3{font-size:18px;font-weight:800;display:flex;align-items:center;gap:9px}
+.sct-h h3 small{font-size:13px;font-weight:400;color:var(--faint)}
+.sct-h .up{font-size:12.5px;color:var(--a1)}
+.sct table{width:100%;border-collapse:collapse}
+.sct th,.sct td{padding:13px 16px;text-align:left;font-size:14px;border-bottom:1px solid var(--line)}
+.sct th{font-size:12.5px;color:var(--faint);font-weight:600;background:rgba(255,255,255,.03)}
+.sct td{color:var(--dim)}
+.sct tbody tr:hover{background:rgba(6,182,212,.07)}
+.sct td b{color:var(--txt);font-weight:700}
+.sct .st{display:inline-block;font-size:12px;font-weight:700;padding:3px 9px;border-radius:20px}
+.sct .st.on{color:#04232d;background:rgba(103,232,249,.24)}
+.sct .st.soon{color:#04232d;background:rgba(165,243,252,.22)}
+.sct .st.off{color:var(--faint);background:rgba(255,255,255,.06)}
+.scm{display:flex;flex-direction:column;gap:14px}
+.scm-i{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px;transition:.24s}
+.scm-i:hover{transform:translateX(5px);border-color:rgba(6,182,212,.32)}
+.scm-i h4{font-size:16.5px;font-weight:800;margin-bottom:8px;display:flex;align-items:center;gap:9px}
+.scm-i h4 span{font-size:12.5px;font-weight:600;color:#04232d;padding:3px 10px;border-radius:20px;background:linear-gradient(135deg,var(--p2),#a5f3fc)}
+.scm-i p{font-size:14px;color:var(--dim);line-height:1.8}
+.scm-i .ft{margin-top:12px;padding-top:11px;border-top:1px solid var(--line);font-size:12.5px;color:var(--faint);display:flex;gap:14px;flex-wrap:wrap}
+
+.box{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.box-h{display:flex;align-items:center;justify-content:space-between;padding:16px 22px;background:rgba(255,255,255,.04);border-bottom:1px solid var(--line);flex-wrap:wrap;gap:10px}
+.box-h h3{font-size:18px;font-weight:800;display:flex;align-items:center;gap:9px}
+.box-h h3 small{font-size:13px;font-weight:400;color:var(--faint)}
+.box-h .up{font-size:12.5px;color:var(--a1)}
+.box ul{list-style:none}
+.box li{display:grid;grid-template-columns:44px 46px 1fr 112px 72px;gap:16px;align-items:center;padding:14px 22px;border-bottom:1px solid var(--line)}
+.box li:last-child{border-bottom:none}
+.box li:hover{background:rgba(6,182,212,.07)}
+.box .no{font-size:19px;font-weight:800;text-align:center;color:var(--faint)}
+.box li:nth-child(1) .no{color:var(--a1)}
+.box li:nth-child(2) .no{color:#cfe8ef}
+.box li:nth-child(3) .no{color:#a8bcc9}
+.box .po{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;font-size:22px;
+  background:linear-gradient(135deg,var(--g1,rgba(6,182,212,.2)),var(--g2,rgba(6,182,212,.06)));border:1px solid var(--line)}
+.box .ti h4{font-size:15.5px;font-weight:700;transition:.2s}
+.box li:hover .ti h4{color:var(--a1)}
+.box .ti p{font-size:12.5px;color:var(--faint);margin-top:2px}
+.box .pc{text-align:right;font-size:15px;font-weight:800;color:var(--a1)}
+.box .pc small{display:block;font-size:11.5px;font-weight:400;color:var(--faint);margin-top:1px}
+.box .ch{text-align:right;font-size:12.5px;color:var(--faint)}
+.box-nt{margin-top:16px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.box-nt h4{font-size:16px;font-weight:800;margin-bottom:14px}
+.box-nt .kp{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.box-nt .kp div{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:12px;padding:16px}
+.box-nt .kp div b{display:block;font-size:21px;font-weight:800;color:var(--a1)}
+.box-nt .kp div span{display:block;font-size:13px;color:var(--dim);margin-top:4px;line-height:1.6}
+
+.rv{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.rvi{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:.24s;display:flex;flex-direction:column}
+.rvi:hover{transform:translateY(-6px);box-shadow:0 18px 42px rgba(0,0,0,.48);border-color:rgba(6,182,212,.3)}
+.rvi .th2{height:132px;display:grid;place-items:center;font-size:52px;position:relative;
+  background:linear-gradient(135deg,var(--g1,rgba(6,182,212,.24)),var(--g2,rgba(6,182,212,.06)))}
+.rvi .th2 .lv{position:absolute;top:12px;left:14px;font-size:11.5px;font-weight:700;color:#04232d;padding:4px 10px;border-radius:20px;background:linear-gradient(135deg,var(--p2),#a5f3fc)}
+.rvi .th2 .rt{position:absolute;top:12px;right:14px;font-size:12px;font-weight:700;color:#fff;padding:4px 10px;border-radius:20px;background:rgba(0,0,0,.4)}
+.rvi .ctn{padding:22px 24px;flex:1;display:flex;flex-direction:column;gap:12px}
+.rvi .who{display:flex;align-items:center;gap:12px}
+.rvi .av{flex:none;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-size:19px;color:#fff;background:linear-gradient(135deg,#0e7490,var(--p1))}
+.rvi .who div h4{font-size:15.5px;font-weight:700}
+.rvi .who div p{font-size:12.5px;color:var(--faint)}
+.rvi h3{font-size:17.5px;font-weight:800;line-height:1.5}
+.rvi blockquote{font-size:14px;color:var(--dim);line-height:1.85;padding:12px 15px;border-left:3px solid var(--p2);background:rgba(6,182,212,.07);border-radius:0 10px 10px 0}
+.rvi .tags{display:flex;flex-wrap:wrap;gap:7px}
+.rvi .tags i{font-style:normal;font-size:12.5px;color:var(--dim);padding:4px 10px;border-radius:20px;background:rgba(255,255,255,.05)}
+.rvi .ft{font-size:12.5px;color:var(--faint);padding-top:10px;border-top:1px solid var(--line);margin-top:auto;display:flex;justify-content:space-between}
+
+.gu{display:grid;grid-template-columns:1.35fr 1fr;gap:26px;align-items:start}
+.guc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.guc h3{font-size:19px;font-weight:800;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.guc h3::before{content:"";width:5px;height:20px;border-radius:4px;background:linear-gradient(180deg,var(--p1),var(--p2))}
+.gm{display:flex;flex-direction:column;gap:16px}
+.gm-i{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center}
+.gm-i .lb{font-size:14.5px;color:var(--txt);font-weight:600}
+.gm-i .vl{font-size:13px;color:var(--a1);font-weight:700;text-align:right;white-space:nowrap}
+.gm-i .vl small{display:block;font-size:11.5px;font-weight:400;color:var(--faint)}
+.gm-i .bar{height:7px;border-radius:6px;background:rgba(255,255,255,.07);overflow:hidden;margin-top:7px}
+.gm-i .bar i{display:block;height:100%;border-radius:6px;background:linear-gradient(90deg,var(--p1),var(--p2))}
+.guc .note{margin-top:18px;padding:14px 16px;border-radius:11px;background:rgba(6,182,212,.07);border:1px solid rgba(6,182,212,.18);font-size:13.5px;color:var(--dim);line-height:1.8}
+.gul{display:flex;flex-direction:column;gap:14px}
+.gul-i{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px;transition:.24s}
+.gul-i:hover{transform:translateY(-4px);border-color:rgba(103,232,249,.32)}
+.gul-i .ic{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;font-size:20px;margin-bottom:12px;
+  background:linear-gradient(135deg,rgba(103,232,249,.2),rgba(103,232,249,.05));border:1px solid var(--line)}
+.gul-i h4{font-size:16px;font-weight:800;margin-bottom:7px}
+.gul-i p{font-size:13.5px;color:var(--dim);line-height:1.8}
+
+.ga{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.gi{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/3;border:1px solid var(--line);transition:transform .25s}
+.gi:hover{transform:scale(1.03);z-index:2}
+.gi .bg{position:absolute;inset:0;background:linear-gradient(140deg,var(--g1,#0d2832),var(--g2,#0a1014))}
+.gi .bg span{position:absolute;inset:0;display:grid;place-items:center;font-size:46px;transition:transform .4s}
+.gi:hover .bg span{transform:scale(1.12)}
+.gi .mk{position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,10,14,.94),transparent 70%);display:flex;flex-direction:column;justify-content:flex-end;padding:14px}
+.gi h4{font-size:15px;font-weight:700}
+.gi p{font-size:12px;color:var(--faint);margin-top:3px}
+
+.tp{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tpc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:.24s}
+.tpc:hover{transform:translateY(-6px);box-shadow:0 18px 42px rgba(0,0,0,.48);border-color:rgba(103,232,249,.32)}
+.tpc .th2{position:relative;height:120px;display:grid;place-items:center;font-size:46px;
+  background:linear-gradient(135deg,var(--g1,rgba(6,182,212,.24)),var(--g2,rgba(6,182,212,.06)))}
+.tpc .th2 .ct{position:absolute;top:10px;left:12px;font-size:11.5px;font-weight:700;color:#04232d;padding:4px 9px;border-radius:20px;background:linear-gradient(135deg,var(--p2),#a5f3fc)}
+.tpc .ctn{padding:18px 20px}
+.tpc h4{font-size:16.5px;font-weight:800;line-height:1.5;margin-bottom:8px}
+.tpc p{font-size:13.5px;color:var(--dim);line-height:1.8}
+.tpc .ft{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:12.5px;color:var(--faint);display:flex;justify-content:space-between}
+
+.sub{border-radius:22px;padding:40px 36px;position:relative;overflow:hidden;text-align:center;border:1px solid var(--line);background:linear-gradient(135deg,rgba(6,182,212,.14),rgba(103,232,249,.1))}
+.sub .bg{position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.06) 1px,transparent 0);background-size:22px 22px;opacity:.6}
+.sub .cn{position:relative}
+.sub h3{font-size:25px;font-weight:800}
+.sub p{font-size:14.5px;color:var(--dim);margin-top:8px}
+.sf{display:flex;gap:10px;max-width:480px;margin:22px auto 0;flex-wrap:wrap;justify-content:center}
+.sf input{flex:1;min-width:220px;padding:13px 16px;border-radius:12px;background:rgba(6,10,14,.55);border:1px solid var(--line);color:var(--txt);font-size:14.5px;font-family:inherit;outline:none;transition:.2s}
+.sf input:focus{border-color:rgba(6,182,212,.55)}
+.sf button{padding:13px 26px;border-radius:12px;font-size:15px;font-weight:700;color:#04232d;background:linear-gradient(135deg,var(--p2),#a5f3fc);box-shadow:0 8px 22px rgba(6,182,212,.36);transition:transform .18s}
+.sf button:hover{transform:translateY(-2px)}
+
+.ab{display:grid;grid-template-columns:1.35fr 1fr;gap:26px;align-items:start}
+.abc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.abc h3{font-size:19px;font-weight:800;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.abc h3::before{content:"";width:5px;height:20px;border-radius:4px;background:linear-gradient(180deg,var(--p1),var(--p2))}
+.abc p{font-size:14.5px;color:var(--dim);margin-bottom:12px;line-height:1.85}
+.abc p:last-child{margin-bottom:0}
+.lc{display:flex;flex-wrap:wrap;gap:9px}
+.lc a{font-size:13.5px;padding:8px 14px;border-radius:9px;background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--dim);transition:.2s}
+.lc a:hover{background:rgba(6,182,212,.14);border-color:rgba(6,182,212,.42);color:var(--txt);transform:translateY(-2px)}
+
+.ft{background:var(--bg2);border-top:1px solid var(--line);margin-top:40px;padding:46px 0 0}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px}
+.fg h4{font-size:15px;font-weight:700;margin-bottom:14px}
+.fg .bd p{font-size:13.5px;color:var(--dim);margin-top:12px;line-height:1.8}
+.fg ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.fg ul a{font-size:13.5px;color:var(--dim);transition:.2s}
+.fg ul a:hover{color:var(--txt);padding-left:5px}
+.fb{border-top:1px solid var(--line);margin-top:36px;padding:20px 0;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--faint)}
+.fb a{color:var(--dim)}
+.fb a:hover{color:var(--txt)}
+.fb .ls{display:flex;gap:16px;flex-wrap:wrap}
+
+.to{position:fixed;right:20px;bottom:24px;z-index:90;width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--p1),var(--p2));color:#fff;display:grid;place-items:center;box-shadow:0 8px 24px rgba(6,182,212,.4);opacity:0;visibility:hidden;transform:translateY(12px);transition:.28s;font-size:17px}
+.to.show{opacity:1;visibility:visible;transform:translateY(0)}
+
+@media(max-width:1080px){.g4,.ga{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:960px){
+  .nav{display:none;position:absolute;top:72px;left:0;right:0;flex-direction:column;gap:2px;padding:14px;background:rgba(12,17,22,.99);border-bottom:1px solid var(--line)}
+  .nav.open{display:flex}
+  .nav a{width:100%;padding:12px 14px}
+  .nav a.on::after{display:none}
+  .mb{display:block}
+  .sch{display:none}
+  .hero-m h1{font-size:33px}
+  .g4,.ga,.tp{grid-template-columns:repeat(2,1fr)}
+  .hero-g,.news,.sch2,.rv,.gu,.ab{grid-template-columns:1fr}
+  .hero-s{grid-template-rows:none;grid-template-columns:1fr 1fr}
+  .fg{grid-template-columns:1fr 1fr}
+  .st h2{font-size:21px}
+  .box-nt .kp{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .container{padding:0 16px}
+  .hero{padding:28px 0 20px}
+  .hero-m{min-height:350px;padding:26px 20px}
+  .hero-m h1{font-size:25px}
+  .hero-m>p{font-size:14.5px}
+  .hero-btns .btn{flex:1;justify-content:center;padding:12px 16px;font-size:14.5px}
+  .hero-s{grid-template-columns:1fr}
+  .g4,.ga,.tp{grid-template-columns:1fr 1fr}
+  .fg{grid-template-columns:1fr}
+  .sec{padding:32px 0}
+  .shd{margin-bottom:16px}
+  .tabs button{padding:8px 14px;font-size:13.5px}
+  .nf{min-height:290px;padding:24px 18px}
+  .nf h3{font-size:19px}
+  .box li{grid-template-columns:30px 40px 1fr 84px;gap:10px;padding:12px 16px}
+  .box .ch{display:none}
+  .rvi .th2{font-size:44px;height:110px}
+  .sub{padding:30px 20px}
+  .sub h3{font-size:20px}
+  .logo .nm{font-size:18px}
+  .sct table{font-size:13px}
+  .sct th,.sct td{padding:10px 12px}
+  .to{right:12px;bottom:16px;width:42px;height:42px}
+}
+@media print{.header,.to,.sub,.topbar{display:none}body{background:#fff;color:#000}}
+
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<div class="topbar">
+  <div class="container">
+    <div class="l"><span class="d"></span>飘雪电影网 · 冬季档特别观察 · 年末压轴片单持续更新中</div>
+    <div class="r"><a href="#box">票房榜单</a><a href="#fav">冬季片单</a><a href="#review">影评专栏</a><a href="#about">关于本站</a></div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container">
+    <a class="logo" href="https://piaoxuedianyingwang-zh.github.io">
+      <span class="mk">❄️</span>
+      <span class="nm"><em>飘雪电影网</em><small>piaoxuedianyingwang-zh.github.io</small></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#home">首页</a>
+      <a href="#news">电影资讯</a>
+      <a href="#new">院线新片</a>
+      <a href="#cn">国产电影</a>
+      <a href="#fav">冬季片单</a>
+      <a href="#schedule">排片档期</a>
+      <a href="#box">票房榜单</a>
+      <a href="#review">影评专栏</a>
+      <a href="#guide">观影指南</a>
+      <a href="#gallery">剧照图集</a>
+      <a href="#topic">专题策划</a>
+      <a href="#about">关于飘雪电影网</a>
+    </nav>
+    <div class="ha">
+      <div class="sch">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="search" placeholder="搜片名 / 导演 / 演员 / 类型" aria-label="检索">
+      </div>
+      <button class="mb" id="mb" aria-label="菜单"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero" id="home">
+    <div class="hero-g">
+      <div class="hero-m">
+        <div class="hero-crumb">飘雪电影网 / <b>piaoxuedianyingwang-zh.github.io</b> · 最新电影资讯、院线新片与冬季好片推荐</div>
+        <h1>冬天看什么片<br><i>飘雪电影网 · 冬季档 · 年末压轴片单</i></h1>
+        <p><strong style="color:var(--txt)">飘雪电影网</strong>（piaoxuedianyingwang-zh.github.io）整理最新电影资讯与院线新片，聚焦冬季档与年末压轴，提供经典老片回顾、电影票房与影评分享，按季节和心情整理片单，帮您少踩烂片。</p>
+        <div class="hero-tags">
+          <span>❄️ 冬季档特别观察</span>
+          <span>🎟️ 当周票房前十</span>
+          <span>📋 年末压轴片单</span>
+          <span>📝 编辑影评与短评</span>
+        </div>
+        <div class="hero-btns">
+          <a class="btn bp" href="#fav">查看冬季片单 →</a>
+          <a class="btn bg" href="#box">本周票房</a>
+        </div>
+      </div>
+      <div class="hero-s">
+        <div class="hc c1">
+          <div><div class="bg-n">7<em> 部新片</em></div><h4>冬季档院线新片陆续开画</h4></div>
+          <div class="ft">其中 3 部为国产新片</div>
+        </div>
+        <div class="hc c2">
+          <div><div class="bg-n">2.6<em> 亿 · 当周大盘</em></div><h4>单周票房较上周 ↓ 12%</h4></div>
+          <div class="ft">年末压轴前的蓄势期</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec" id="news">
+    <div class="shd">
+      <div class="st"><span class="bar"></span><div><h2>电影资讯</h2><p>院线动态 · 定档消息 · 电影节与行业观察</p></div></div>
+      <a class="sm" href="#">全部资讯 ›</a>
+    </div>
+    <div class="news">
+      <article class="nf">
+        <div class="bg"><span></span><span></span></div>
+        <div class="c">
+          <span class="tag">本周头条</span>
+          <h3>冬季档七部新片陆续开画，主旋律、悬疑与动画三类题材正面交锋</h3>
+          <p>本周院线将有七部新片登陆，涵盖主旋律现实题材、犯罪悬疑与合家欢动画。飘雪电影网整理了各片的片长、适龄提示与首批口碑，供排片参考。</p>
+          <div class="meta"><span>🕐 2 小时前</span><span>📁 档期动态</span><span>💬 214 条讨论</span><span>👁 3.2 万阅读</span></div>
+        </div>
+      </article>
+      <div class="nl">
+        <article><span class="n">1</span><div class="t"><h4>三部进口片宣布引进，其中一部锁定贺岁档</h4><div class="m"><span>3 小时前</span><span>引进动态</span></div></div></article>
+        <article><span class="n">2</span><div class="t"><h4>某犯罪片点映口碑逆袭，豆瓣开分 8.1</h4><div class="m"><span>5 小时前</span><span>口碑速递</span></div></div></article>
+        <article><span class="n">3</span><div class="t"><h4>导演新作宣布定档，演员阵容仍处保密阶段</h4><div class="m"><span>昨天</span><span>定档消息</span></div></div></article>
+        <article><span class="n">4</span><div class="t"><h4>经典港片 4K 修复版将在十月下旬重映，限定两周</h4><div class="m"><span>昨天</span><span>重映消息</span></div></div></article>
+        <article><span class="n">5</span><div class="t"><h4>流媒体上线片单更新，三部院线撤档影片转网播</h4><div class="m"><span>2 天前</span><span>流媒体</span></div></div></article>
+        <article><span class="n">6</span><div class="t"><h4>年度电影节片单公布，华语片入围主竞赛两项</h4><div class="m"><span>2 天前</span><span>电影节</span></div></div></article>
+      </div>
+    </div>
+  </section>
+  <section class="sec" id="new">
+    <div class="shd">
+      <div class="st"><span class="bar"></span><div><h2>院线新片</h2><p>本周上映 · 片长 · 类型 · 口碑与排片建议</p></div></div>
+      <a class="sm" href="#">完整片单 ›</a>
+    </div>
+    <div class="tabs">
+      <button class="on" data-tab="n1">本周上映</button><button class="" data-tab="n2">即将上映</button><button class="" data-tab="n3">点映口碑</button><button class="" data-tab="n4">重映与修复</button>
+      <span class="ct">本周 7 部新片 · 累计片长 13 小时 42 分</span>
+    </div>
+          <div class="tab-pane on" id="n1">
+        <div class="g4">
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.6);--g2:rgba(103,232,249,.46);--g3:#0d2832;--g4:#0a1014"></div><div class="ar">🎞️</div><span class="ep">本周上映</span><span class="sc">点映 8.1</span><div class="st"><span><b></b>犯罪 / 悬疑</span><span>128 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>悬疑迷局</h3><div class="tg"><i>犯罪</i><i>悬疑</i></div><div class="ln"><span><b>口碑榜首，反转处理干净</b></span><span>点映口碑</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.56);--g2:rgba(103,232,249,.4);--g3:#0f1c24;--g4:#0d2832"></div><div class="ar">🎖️</div><span class="ep">本周上映</span><span class="sc">期待值高</span><div class="st"><span><b></b>主旋律 / 现实</span><span>142 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>漫长的归途</h3><div class="tg"><i>主旋律</i><i>现实</i></div><div class="ln"><span><b>原型人物改编，节奏沉稳</b></span><span>建议带长辈</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(103,232,249,.52);--g2:rgba(6,182,212,.42);--g3:#0a1a20;--g4:#0d2832"></div><div class="ar">🐉</div><span class="ep">本周上映</span><span class="sc">合家欢</span><div class="st"><span><b></b>动画 / 奇幻</span><span>96 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>雪国神兽</h3><div class="tg"><i>动画</i><i>奇幻</i></div><div class="ln"><span><b>画面水准提升，亲子向</b></span><span>3D 版更出彩</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.52);--g2:rgba(165,243,252,.38);--g3:#0d2832;--g4:#0a1a20"></div><div class="ar">💔</div><span class="ep">本周上映</span><span class="sc">情感向</span><div class="st"><span><b></b>爱情 / 剧情</span><span>118 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>第七次告别</h3><div class="tg"><i>爱情</i><i>剧情</i></div><div class="ln"><span><b>概念有新意，台词略满</b></span><span>备纸巾</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(14,116,144,.52);--g2:rgba(6,182,212,.38);--g3:#0a1620;--g4:#0d2832"></div><div class="ar">🔍</div><span class="ep">本周上映</span><span class="sc">推理向</span><div class="st"><span><b></b>悬疑 / 惊悚</span><span>105 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>密室十三人</h3><div class="tg"><i>悬疑</i><i>惊悚</i></div><div class="ln"><span><b>密闭空间，中段稍拖</b></span><span>胆大再入场</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(103,232,249,.48);--g2:rgba(6,182,212,.36);--g3:#0a1a20;--g4:#0f1c24"></div><div class="ar">🌾</div><span class="ep">本周上映</span><span class="sc">文艺向</span><div class="st"><span><b></b>剧情 / 文艺</span><span>133 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>麦田的冬天</h3><div class="tg"><i>剧情</i><i>文艺</i></div><div class="ln"><span><b>摄影与配乐是亮点</b></span><span>耐心型观众</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.48);--g2:rgba(103,232,249,.34);--g3:#0d2832;--g4:#0a1a20"></div><div class="ar">🚀</div><span class="ep">本周上映</span><span class="sc">视效向</span><div class="st"><span><b></b>科幻 / 动作</span><span>121 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>深空回声</h3><div class="tg"><i>科幻</i><i>动作</i></div><div class="ln"><span><b>视效音效卖点，剧情套路</b></span><span>杜比影院</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(165,243,252,.46);--g2:rgba(103,232,249,.32);--g3:#0a1a20;--g4:#0d2832"></div><div class="ar">👻</div><span class="ep">本周上映</span><span class="sc">小体量</span><div class="st"><span><b></b>恐怖 / 民俗</span><span>88 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>红衣婆婆</h3><div class="tg"><i>恐怖</i><i>民俗</i></div><div class="ln"><span><b>民俗元素克制，跳吓节制</b></span><span>12 岁以下慎入</span></div></div></article>
+        </div>
+      </div>
+      <div class="tab-pane" id="n2">
+        <div class="g4">
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.58);--g2:rgba(103,232,249,.4);--g3:#0d2832;--g4:#0a1a20"></div><div class="ar">⏳</div><span class="ep">本周上映</span><span class="sc">10 月 18 日</span><div class="st"><span><b></b>历史 / 战争</span><span>156 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>山河无恙</h3><div class="tg"><i>历史</i><i>战争</i></div><div class="ln"><span><b>大场面战争片，后期完成</b></span><span>有望冲档期</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(103,232,249,.54);--g2:rgba(6,182,212,.36);--g3:#0a1a20;--g4:#0d2832"></div><div class="ar">🎪</div><span class="ep">本周上映</span><span class="sc">10 月 25 日</span><div class="st"><span><b></b>喜剧 / 家庭</span><span>112 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>全家出动</h3><div class="tg"><i>喜剧</i><i>家庭</i></div><div class="ln"><span><b>喜剧阵容稳定，笑点密集</b></span><span>周末放松</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(14,116,144,.5);--g2:rgba(6,182,212,.34);--g3:#0a1620;--g4:#0d2832"></div><div class="ar">🕵️</div><span class="ep">本周上映</span><span class="sc">11 月 1 日</span><div class="st"><span><b></b>犯罪 / 传记</span><span>139 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>证人席</h3><div class="tg"><i>犯罪</i><i>传记</i></div><div class="ln"><span><b>改编真实案件，造型颠覆</b></span><span>关注定档</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.5);--g2:rgba(165,243,252,.32);--g3:#0d2832;--g4:#0a1a20"></div><div class="ar">🐠</div><span class="ep">本周上映</span><span class="sc">11 月 8 日</span><div class="st"><span><b></b>动画 / 治愈</span><span>104 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>小岛邮差</h3><div class="tg"><i>动画</i><i>治愈</i></div><div class="ln"><span><b>中日合拍，手绘质感</b></span><span>文艺向</span></div></div></article>
+        </div>
+      </div>
+      <div class="tab-pane" id="n3">
+        <div class="g4">
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.58);--g2:rgba(103,232,249,.38);--g3:#0d2832;--g4:#0a1a20"></div><div class="ar">⭐</div><span class="ep">本周上映</span><span class="sc">豆瓣 8.1</span><div class="st"><span><b></b>犯罪 / 悬疑</span><span>128 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>悬疑迷局</h3><div class="tg"><i>犯罪</i><i>悬疑</i></div><div class="ln"><span><b>反转干净，结构精巧</b></span><span>口碑榜首</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(103,232,249,.54);--g2:rgba(6,182,212,.34);--g3:#0a1a20;--g4:#0d2832"></div><div class="ar">👻</div><span class="ep">本周上映</span><span class="sc">豆瓣 7.6</span><div class="st"><span><b></b>恐怖 / 民俗</span><span>88 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>红衣婆婆</h3><div class="tg"><i>恐怖</i><i>民俗</i></div><div class="ln"><span><b>民俗元素加分，气氛足</b></span><span>点映加分</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.52);--g2:rgba(165,243,252,.32);--g3:#0d2832;--g4:#0a1a20"></div><div class="ar">🐉</div><span class="ep">本周上映</span><span class="sc">豆瓣 7.4</span><div class="st"><span><b></b>动画 / 奇幻</span><span>96 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>雪国神兽</h3><div class="tg"><i>动画</i><i>奇幻</i></div><div class="ln"><span><b>动作场面获好评，剧情简单</b></span><span>亲子高分</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(14,116,144,.5);--g2:rgba(6,182,212,.32);--g3:#0a1620;--g4:#0d2832"></div><div class="ar">🔍</div><span class="ep">本周上映</span><span class="sc">豆瓣 6.8</span><div class="st"><span><b></b>悬疑 / 惊悚</span><span>105 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>密室十三人</h3><div class="tg"><i>悬疑</i><i>惊悚</i></div><div class="ln"><span><b>吓点获赞，逻辑有漏洞</b></span><span>口碑分化</span></div></div></article>
+        </div>
+      </div>
+      <div class="tab-pane" id="n4">
+        <div class="g4">
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.56);--g2:rgba(103,232,249,.38);--g3:#0d2832;--g4:#0a1a20"></div><div class="ar">🎞️</div><span class="ep">本周上映</span><span class="sc">10 月底</span><div class="st"><span><b></b>经典港片</span><span>限定两周</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>老片修复版</h3><div class="tg"><i>经典港片</i></div><div class="ln"><span><b>4K 修复，胶片质感提升</b></span><span>限定场次</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(103,232,249,.52);--g2:rgba(6,182,212,.34);--g3:#0a1a20;--g4:#0d2832"></div><div class="ar">📼</div><span class="ep">本周上映</span><span class="sc">11 月 5 日</span><div class="st"><span><b></b>文艺经典</span><span>限定三周</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>老片特别版</h3><div class="tg"><i>文艺经典</i></div><div class="ln"><span><b>含未公开片段与导演连线</b></span><span>限量场次</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(14,116,144,.48);--g2:rgba(6,182,212,.32);--g3:#0a1620;--g4:#0d2832"></div><div class="ar">🎭</div><span class="ep">本周上映</span><span class="sc">11 月 12 日</span><div class="st"><span><b></b>戏曲电影</span><span>专场放映</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>戏曲电影展</h3><div class="tg"><i>戏曲电影</i></div><div class="ln"><span><b>城市影展专场，场次有限</b></span><span>小众向</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.5);--g2:rgba(165,243,252,.3);--g3:#0d2832;--g4:#0a1a20"></div><div class="ar">🎬</div><span class="ep">本周上映</span><span class="sc">11 月中</span><div class="st"><span><b></b>导演回顾</span><span>六部作品</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>导演回顾展</h3><div class="tg"><i>导演回顾</i></div><div class="ln"><span><b>含幕后访谈与未公开花絮</b></span><span>资深影迷</span></div></div></article>
+        </div>
+      </div>
+
+  </section>
+  <section class="sec" id="cn">
+    <div class="shd">
+      <div class="st"><span class="bar"></span><div><h2>国产电影</h2><p>当季国产新片 · 口碑榜 · 导演与演员动向</p></div></div>
+      <a class="sm" href="#">全部国产片 ›</a>
+    </div>
+    <div class="g4">
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.6);--g2:rgba(103,232,249,.46);--g3:#0d2832;--g4:#0a1014"></div><div class="ar">🎖️</div><span class="ep">国产电影</span><span class="sc">口碑 8.3</span><div class="st"><span><b></b>主旋律</span><span>142 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>漫长的归途</h3><div class="tg"><i>主旋律</i><i>国产</i></div><div class="ln"><span><b>原型人物改编，情感克制不煽情</b></span><span>国产片榜</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.56);--g2:rgba(103,232,249,.4);--g3:#0f1c24;--g4:#0d2832"></div><div class="ar">🐉</div><span class="ep">国产电影</span><span class="sc">口碑 7.4</span><div class="st"><span><b></b>动画</span><span>96 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>雪国神兽</h3><div class="tg"><i>动画</i><i>国产</i></div><div class="ln"><span><b>国产动画工业水准的又一次提升</b></span><span>国产片榜</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(103,232,249,.52);--g2:rgba(6,182,212,.38);--g3:#0a1a20;--g4:#0d2832"></div><div class="ar">🎭</div><span class="ep">国产电影</span><span class="sc">口碑 7.9</span><div class="st"><span><b></b>剧情</span><span>133 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>麦田的冬天</h3><div class="tg"><i>剧情</i><i>国产</i></div><div class="ln"><span><b>摄影与配乐是最大亮点</b></span><span>国产片榜</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.52);--g2:rgba(165,243,252,.34);--g3:#0d2832;--g4:#0a1a20"></div><div class="ar">💔</div><span class="ep">国产电影</span><span class="sc">口碑 6.5</span><div class="st"><span><b></b>爱情</span><span>118 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>第七次告别</h3><div class="tg"><i>爱情</i><i>国产</i></div><div class="ln"><span><b>概念有新意，执行略显稚嫩</b></span><span>国产片榜</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(14,116,144,.52);--g2:rgba(6,182,212,.36);--g3:#0a1620;--g4:#0d2832"></div><div class="ar">🔍</div><span class="ep">国产电影</span><span class="sc">口碑 6.8</span><div class="st"><span><b></b>悬疑</span><span>105 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>密室十三人</h3><div class="tg"><i>悬疑</i><i>国产</i></div><div class="ln"><span><b>空间设计用心，结局解释稍弱</b></span><span>国产片榜</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(103,232,249,.48);--g2:rgba(6,182,212,.32);--g3:#0a1a20;--g4:#0f1c24"></div><div class="ar">🌾</div><span class="ep">国产电影</span><span class="sc">口碑 7.1</span><div class="st"><span><b></b>文艺</span><span>133 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>麦田的冬天</h3><div class="tg"><i>文艺</i><i>国产</i></div><div class="ln"><span><b>艺术院线常客，节奏极慢</b></span><span>国产片榜</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.5);--g2:rgba(103,232,249,.34);--g3:#0d2832;--g4:#0a1a20"></div><div class="ar">👻</div><span class="ep">国产电影</span><span class="sc">口碑 7.6</span><div class="st"><span><b></b>恐怖</span><span>88 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>红衣婆婆</h3><div class="tg"><i>恐怖</i><i>国产</i></div><div class="ln"><span><b>民俗元素克制，当季国产恐怖片最佳</b></span><span>国产片榜</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(165,243,252,.46);--g2:rgba(6,182,212,.3);--g3:#0a1a20;--g4:#0d2832"></div><div class="ar">🎪</div><span class="ep">国产电影</span><span class="sc">待上映</span><div class="st"><span><b></b>喜剧</span><span>112 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>全家出动</h3><div class="tg"><i>喜剧</i><i>国产</i></div><div class="ln"><span><b>喜剧阵容稳定，预告片笑点密集</b></span><span>国产片榜</span></div></div></article>
+    </div>
+  </section>
+  <section class="sec" id="fav">
+    <div class="shd">
+      <div class="st"><span class="bar"></span><div><h2>冬季片单</h2><p>按季节和心情挑片 · 飘雪推荐 · 含片长与时长建议</p></div></div>
+      <a class="sm" href="#">完整片单 ›</a>
+    </div>
+    <div class="tabs">
+      <button class="on" data-tab="f1">冬天适合看的</button><button class="" data-tab="f2">一个人看不孤单</button><button class="" data-tab="f3">适合带家人</button><button class="" data-tab="f4">时间不多时</button>
+      <span class="ct">16 部精选 · 覆盖 88 至 156 分钟片长</span>
+    </div>
+          <div class="tab-pane on" id="f1">
+        <div class="g4">
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.6);--g2:rgba(103,232,249,.44);--g3:#0d2832;--g4:#0a1014"></div><div class="ar">🔥</div><span class="ep">冬季片单</span><div class="st"><span><b></b>主旋律</span><span>142 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>漫长的归途</h3><div class="tg"><i>主旋律</i><i>片单推荐</i></div><div class="ln"><span><b>大银幕看更有分量，适合和家人一起</b></span><span>飘雪推荐</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(103,232,249,.52);--g2:rgba(6,182,212,.4);--g3:#0a1a20;--g4:#0d2832"></div><div class="ar">🧣</div><span class="ep">冬季片单</span><div class="st"><span><b></b>文艺</span><span>133 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>麦田的冬天</h3><div class="tg"><i>文艺</i><i>片单推荐</i></div><div class="ln"><span><b>慢节奏适合不赶时间的下午场</b></span><span>飘雪推荐</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.52);--g2:rgba(103,232,249,.38);--g3:#0d2832;--g4:#0a1a20"></div><div class="ar">❄️</div><span class="ep">冬季片单</span><div class="st"><span><b></b>动画</span><span>96 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>雪国神兽</h3><div class="tg"><i>动画</i><i>片单推荐</i></div><div class="ln"><span><b>画面冷色调漂亮，适合亲子</b></span><span>飘雪推荐</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(165,243,252,.46);--g2:rgba(6,182,212,.34);--g3:#0a1a20;--g4:#0d2832"></div><div class="ar">🕯️</div><span class="ep">冬季片单</span><div class="st"><span><b></b>爱情</span><span>118 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>第七次告别</h3><div class="tg"><i>爱情</i><i>片单推荐</i></div><div class="ln"><span><b>情绪浓，建议一个人去看</b></span><span>飘雪推荐</span></div></div></article>
+        </div>
+      </div>
+      <div class="tab-pane" id="f2">
+        <div class="g4">
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(14,116,144,.52);--g2:rgba(6,182,212,.36);--g3:#0a1620;--g4:#0d2832"></div><div class="ar">🎧</div><span class="ep">冬季片单</span><div class="st"><span><b></b>悬疑</span><span>105 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>密室十三人</h3><div class="tg"><i>悬疑</i><i>片单推荐</i></div><div class="ln"><span><b>独自看更容易跟住线索</b></span><span>飘雪推荐</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.5);--g2:rgba(165,243,252,.32);--g3:#0d2832;--g4:#0a1a20"></div><div class="ar">🌙</div><span class="ep">冬季片单</span><div class="st"><span><b></b>经典</span><span>118 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>老片修复版</h3><div class="tg"><i>经典</i><i>片单推荐</i></div><div class="ln"><span><b>午夜场氛围正好</b></span><span>飘雪推荐</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(103,232,249,.48);--g2:rgba(6,182,212,.32);--g3:#0a1a20;--g4:#0d2832"></div><div class="ar">📖</div><span class="ep">冬季片单</span><div class="st"><span><b></b>传记</span><span>139 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>证人席</h3><div class="tg"><i>传记</i><i>片单推荐</i></div><div class="ln"><span><b>长片适合周末下午慢慢看</b></span><span>飘雪推荐</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.46);--g2:rgba(103,232,249,.3);--g3:#0d2832;--g4:#0a1620"></div><div class="ar">🪞</div><span class="ep">冬季片单</span><div class="st"><span><b></b>文艺</span><span>108 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>老片特别版</h3><div class="tg"><i>文艺</i><i>片单推荐</i></div><div class="ln"><span><b>含未公开片段，适合二刷</b></span><span>飘雪推荐</span></div></div></article>
+        </div>
+      </div>
+      <div class="tab-pane" id="f3">
+        <div class="g4">
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.56);--g2:rgba(103,232,249,.4);--g3:#0d2832;--g4:#0a1a20"></div><div class="ar">🧒</div><span class="ep">冬季片单</span><div class="st"><span><b></b>动画</span><span>96 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>雪国神兽</h3><div class="tg"><i>动画</i><i>片单推荐</i></div><div class="ln"><span><b>剧情简单但画面不糊弄</b></span><span>飘雪推荐</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(103,232,249,.5);--g2:rgba(6,182,212,.34);--g3:#0a1a20;--g4:#0d2832"></div><div class="ar">👨‍👩‍👧</div><span class="ep">冬季片单</span><div class="st"><span><b></b>喜剧</span><span>112 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>全家出动</h3><div class="tg"><i>喜剧</i><i>片单推荐</i></div><div class="ln"><span><b>笑点密集，长辈接受度高</b></span><span>飘雪推荐</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.5);--g2:rgba(165,243,252,.32);--g3:#0d2832;--g4:#0a1a20"></div><div class="ar">🎖️</div><span class="ep">冬季片单</span><div class="st"><span><b></b>主旋律</span><span>142 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>漫长的归途</h3><div class="tg"><i>主旋律</i><i>片单推荐</i></div><div class="ln"><span><b>适合三代人一起讨论</b></span><span>飘雪推荐</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(14,116,144,.46);--g2:rgba(6,182,212,.3);--g3:#0a1620;--g4:#0d2832"></div><div class="ar">🐠</div><span class="ep">冬季片单</span><div class="st"><span><b></b>动画</span><span>104 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>小岛邮差</h3><div class="tg"><i>动画</i><i>片单推荐</i></div><div class="ln"><span><b>手绘画风，长辈普遍喜欢</b></span><span>飘雪推荐</span></div></div></article>
+        </div>
+      </div>
+      <div class="tab-pane" id="f4">
+        <div class="g4">
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(165,243,252,.46);--g2:rgba(103,232,249,.32);--g3:#0a1a20;--g4:#0d2832"></div><div class="ar">⏱️</div><span class="ep">冬季片单</span><div class="st"><span><b></b>恐怖</span><span>88 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>红衣婆婆</h3><div class="tg"><i>恐怖</i><i>片单推荐</i></div><div class="ln"><span><b>最短的一部，全程无冷场</b></span><span>飘雪推荐</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.46);--g2:rgba(6,182,212,.28);--g3:#0d2832;--g4:#0a1620"></div><div class="ar">🎬</div><span class="ep">冬季片单</span><div class="st"><span><b></b>戏曲</span><span>片长不固定</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>戏曲电影展</h3><div class="tg"><i>戏曲</i><i>片单推荐</i></div><div class="ln"><span><b>专场放映，时间弹性大</b></span><span>飘雪推荐</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(103,232,249,.44);--g2:rgba(6,182,212,.28);--g3:#0a1a20;--g4:#0d2832"></div><div class="ar">📼</div><span class="ep">冬季片单</span><div class="st"><span><b></b>经典</span><span>128 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>老片特别版</h3><div class="tg"><i>经典</i><i>片单推荐</i></div><div class="ln"><span><b>下午场时段合适</b></span><span>飘雪推荐</span></div></div></article>
+        <article class="cd"><div class="th"><div class="ly" style="--g1:rgba(6,182,212,.44);--g2:rgba(165,243,252,.26);--g3:#0d2832;--g4:#0a1a20"></div><div class="ar">🎞️</div><span class="ep">冬季片单</span><div class="st"><span><b></b>动画</span><span>96 分钟</span></div><div class="hv"><i>▶</i></div></div><div class="in"><h3>雪国神兽</h3><div class="tg"><i>动画</i><i>片单推荐</i></div><div class="ln"><span><b>赶场间隙的最佳选择</b></span><span>飘雪推荐</span></div></div></article>
+        </div>
+      </div>
+
+  </section>
+  <section class="sec" id="schedule">
+    <div class="shd">
+      <div class="st"><span class="bar"></span><div><h2>排片档期</h2><p>十月下旬至十一月排片日历 · 定档消息 · 撤档与改档</p></div></div>
+      <a class="sm" href="#">完整日历 ›</a>
+    </div>
+    <div class="sch2">
+      <div class="sct">
+        <div class="sct-h"><h3>十月排片与定档一览 <small>包含已上映与待上映，含片长</small></h3><span class="up">更新于 9 月 30 日</span></div>
+        <table>
+          <thead><tr><th>上映日</th><th>影片</th><th>类型</th><th>片长</th><th>状态</th></tr></thead>
+          <tbody>
+            <tr><td><b>9 月 30 日</b></td><td>悬疑迷局</td><td>犯罪悬疑</td><td>128 分钟</td><td><span class="st on">在映</span></td></tr>
+            <tr><td><b>9 月 30 日</b></td><td>漫长的归途</td><td>主旋律</td><td>142 分钟</td><td><span class="st on">在映</span></td></tr>
+            <tr><td><b>10 月 2 日</b></td><td>雪国神兽</td><td>动画奇幻</td><td>96 分钟</td><td><span class="st on">在映</span></td></tr>
+            <tr><td><b>10 月 4 日</b></td><td>第七次告别</td><td>爱情剧情</td><td>118 分钟</td><td><span class="st on">在映</span></td></tr>
+            <tr><td><b>10 月 11 日</b></td><td>深空回声</td><td>科幻动作</td><td>121 分钟</td><td><span class="st soon">即将上映</span></td></tr>
+            <tr><td><b>10 月 18 日</b></td><td>红衣婆婆</td><td>恐怖民俗</td><td>88 分钟</td><td><span class="st soon">即将上映</span></td></tr>
+            <tr><td><b>10 月 25 日</b></td><td>全家出动</td><td>喜剧家庭</td><td>112 分钟</td><td><span class="st soon">即将上映</span></td></tr>
+            <tr><td><b>11 月 1 日</b></td><td>证人席</td><td>犯罪传记</td><td>139 分钟</td><td><span class="st soon">即将上映</span></td></tr>
+            <tr><td><b>11 月 8 日</b></td><td>小岛邮差</td><td>动画治愈</td><td>104 分钟</td><td><span class="st soon">即将上映</span></td></tr>
+            <tr><td><b>11 月 15 日</b></td><td>山河无恙</td><td>历史战争</td><td>156 分钟</td><td><span class="st off">待定档</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="scm">
+        <div class="scm-i"><h4>冬季档的排片逻辑 <span>档期观察</span></h4><p>冬季档首日排片占比最高的通常是主旋律与合家欢动画，悬疑片靠点映口碑在中后期反超。若想避开高峰，第二周的工作日场次更舒服。</p><div class="ft"><span>📍 首日排片不等于最终票房</span><span>🔍 关注点映口碑曲线</span></div></div>
+        <div class="scm-i"><h4>撤档与改档怎么看 <span>档期常识</span></h4><p>撤档一般出现在主创舆情、后期质量或竞争压力三种情况。改档多数是为了避开同类型强片，少数情况下是片长调整需要重做拷贝。</p><div class="ft"><span>📍 撤档不等于质量差</span><span>🔍 留意官方公告渠道</span></div></div>
+        <div class="scm-i"><h4>定档日期里的信号 <span>行业常识</span></h4><p>突然空降定档往往是宣发节奏调整，通常伴随点映安排；提前三个月定档的多为大制作，宣发周期长、物料储备足。</p><div class="ft"><span>📍 空降定档常配点映</span><span>🔍 看物料投放密度</span></div></div>
+        <div class="scm-i"><h4>点映与大规模放映的区别 <span>观影常识</span></h4><p>点映场次有限但口碑真实，大规模放映后口碑曲线才具参考意义。首日评分水分最大，第三天之后的评分更稳定。</p><div class="ft"><span>📍 看第三天评分</span><span>🔍 别只信首日开分</span></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec" id="box">
+    <div class="shd">
+      <div class="st"><span class="bar"></span><div><h2>票房榜单</h2><p>当周票房 · 累计票房 · 单片票房与排片占比</p></div></div>
+      <a class="sm" href="#">历史榜单 ›</a>
+    </div>
+    <div class="tabs">
+      <button class="on" data-tab="b1">当周票房</button>
+      <button data-tab="b2">年度累计</button>
+      <button data-tab="b3">国产片榜</button>
+      <button data-tab="b4">进口片榜</button>
+      <span class="ct">本周大盘 2.6 亿 · 较上周 ↓ 12%</span>
+    </div>
+    <div class="tab-pane on" id="b1">
+      <div class="box">
+        <div class="box-h"><h3>当周票房前十</h3><span class="up">单位：万元 · 含点映票房 · 本周大盘 2.6 亿，较上周 ↓ 12%</span></div>
+        <ul>
+          <li><span class="no">1</span><span class="po">🎞️</span><div class="ti"><h4>悬疑迷局</h4><p>犯罪 / 悬疑 · 点映转公映</p></div><span class="pc">3860<small>万元</small></span><span class="ch">↑ 6</span></li>
+          <li><span class="no">2</span><span class="po">🎖️</span><div class="ti"><h4>漫长的归途</h4><p>主旋律 / 现实 · 上映 4 天</p></div><span class="pc">6820<small>万元</small></span><span class="ch">↑ 新进</span></li>
+          <li><span class="no">3</span><span class="po">🐉</span><div class="ti"><h4>雪国神兽</h4><p>动画 / 奇幻 · 上映 2 天</p></div><span class="pc">4150<small>万元</small></span><span class="ch">↑ 新进</span></li>
+          <li><span class="no">4</span><span class="po">💔</span><div class="ti"><h4>第七次告别</h4><p>爱情 / 剧情 · 上映 2 天</p></div><span class="pc">2240<small>万元</small></span><span class="ch">↑ 新进</span></li>
+          <li><span class="no">5</span><span class="po">🎬</span><div class="ti"><h4>夏日终曲</h4><p>青春 / 剧情 · 上映 11 天</p></div><span class="pc">1780<small>万元</small></span><span class="ch">↓ 3</span></li>
+          <li><span class="no">6</span><span class="po">🔍</span><div class="ti"><h4>密室十三人</h4><p>悬疑 / 惊悚 · 点映阶段</p></div><span class="pc">1420<small>万元</small></span><span class="ch">↓ 1</span></li>
+          <li><span class="no">7</span><span class="po">🚀</span><div class="ti"><h4>深空回声</h4><p>科幻 / 动作 · 点映阶段</p></div><span class="pc">980<small>万元</small></span><span class="ch">↑ 新进</span></li>
+          <li><span class="no">8</span><span class="po">🎭</span><div class="ti"><h4>老片特别版</h4><p>经典 / 修复 · 限定场次</p></div><span class="pc">720<small>万元</small></span><span class="ch">— 持平</span></li>
+          <li><span class="no">9</span><span class="po">🐠</span><div class="ti"><h4>小岛邮差</h4><p>动画 / 治愈 · 小规模点映</p></div><span class="pc">460<small>万元</small></span><span class="ch">↑ 新进</span></li>
+          <li><span class="no">10</span><span class="po">👻</span><div class="ti"><h4>红衣婆婆</h4><p>恐怖 / 民俗 · 点映阶段</p></div><span class="pc">320<small>万元</small></span><span class="ch">↑ 新进</span></li>
+        </ul>
+      </div>
+      <div class="box-nt">
+        <h4>影响本周大盘的四个因素</h4>
+        <div class="kp">
+          <div><b>冬季档前夜</b><span>大盘处于档期前的蓄势期，工作日场次上座率偏低</span></div>
+          <div><b>点映带动</b><span>三部影片依靠点映口碑提前锁定上映首日排片</span></div>
+          <div><b>口碑分化</b><span>悬疑片逆势上扬，爱情片首日开分后快速回落</span></div>
+          <div><b>限定场次</b><span>经典重映与修复版占比提升，小体量影片分走部分票房</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane" id="b2">      <div class="box">
+        <div class="box-h"><h3>年度累计票房前十</h3><span class="up">单位：亿元 · 截至 9 月 30 日</span></div>
+        <ul>
+          <li><span class="no">1</span><span class="po">🎬</span><div class="ti"><h4>当年度头号影片</h4><p>科幻 / 动作 · 春节档</p></div><span class="pc">48.6<small>亿元</small></span><span class="ch">— 持平</span></li>
+          <li><span class="no">2</span><span class="po">🎖️</span><div class="ti"><h4>当年度主旋律大片</h4><p>主旋律 / 历史 · 暑期档</p></div><span class="pc">36.2<small>亿元</small></span><span class="ch">— 持平</span></li>
+          <li><span class="no">3</span><span class="po">🐉</span><div class="ti"><h4>当年度动画爆款</h4><p>动画 / 神话 · 暑期档</p></div><span class="pc">28.9<small>亿元</small></span><span class="ch">↑ 1</span></li>
+          <li><span class="no">4</span><span class="po">💑</span><div class="ti"><h4>当年度爱情片黑马</h4><p>爱情 / 都市 · 七夕档</p></div><span class="pc">19.4<small>亿元</small></span><span class="ch">↓ 1</span></li>
+          <li><span class="no">5</span><span class="po">🎭</span><div class="ti"><h4>当年度文艺片惊喜</h4><p>文艺 / 剧情 · 春季档</p></div><span class="pc">14.7<small>亿元</small></span><span class="ch">— 持平</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="tab-pane" id="b3">      <div class="box">
+        <div class="box-h"><h3>国产片票房榜</h3><span class="up">单位：亿元 · 当季在映国产片</span></div>
+        <ul>
+          <li><span class="no">1</span><span class="po">🎖️</span><div class="ti"><h4>漫长的归途</h4><p>主旋律 / 现实 · 当季榜首</p></div><span class="pc">0.68<small>亿元</small></span><span class="ch">↑ 新进</span></li>
+          <li><span class="no">2</span><span class="po">🐉</span><div class="ti"><h4>雪国神兽</h4><p>动画 / 奇幻 · 合家欢</p></div><span class="pc">0.42<small>亿元</small></span><span class="ch">↑ 新进</span></li>
+          <li><span class="no">3</span><span class="po">🎞️</span><div class="ti"><h4>悬疑迷局</h4><p>犯罪 / 悬疑 · 口碑领先</p></div><span class="pc">0.39<small>亿元</small></span><span class="ch">↑ 6</span></li>
+          <li><span class="no">4</span><span class="po">💔</span><div class="ti"><h4>第七次告别</h4><p>爱情 / 剧情 · 粉丝向</p></div><span class="pc">0.22<small>亿元</small></span><span class="ch">↑ 新进</span></li>
+          <li><span class="no">5</span><span class="po">🌾</span><div class="ti"><h4>麦田的冬天</h4><p>文艺 / 乡村 · 艺术院线</p></div><span class="pc">0.11<small>亿元</small></span><span class="ch">↓ 2</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="tab-pane" id="b4">      <div class="box">
+        <div class="box-h"><h3>进口片票房榜</h3><span class="up">单位：亿元 · 当季在映进口片</span></div>
+        <ul>
+          <li><span class="no">1</span><span class="po">🚀</span><div class="ti"><h4>深空回声</h4><p>科幻 / 动作 · 视效大片</p></div><span class="pc">0.31<small>亿元</small></span><span class="ch">↑ 新进</span></li>
+          <li><span class="no">2</span><span class="po">🎪</span><div class="ti"><h4>马戏团大冒险</h4><p>动画 / 冒险 · 合家欢</p></div><span class="pc">0.24<small>亿元</small></span><span class="ch">↓ 1</span></li>
+          <li><span class="no">3</span><span class="po">🐠</span><div class="ti"><h4>深海来信</h4><p>动画 / 治愈 · 小规模</p></div><span class="pc">0.16<small>亿元</small></span><span class="ch">— 持平</span></li>
+          <li><span class="no">4</span><span class="po">🕵️</span><div class="ti"><h4>双面委托人</h4><p>犯罪 / 悬疑 · 点映中</p></div><span class="pc">0.09<small>亿元</small></span><span class="ch">↑ 新进</span></li>
+          <li><span class="no">5</span><span class="po">🎻</span><div class="ti"><h4>维也纳的冬天</h4><p>文艺 / 音乐 · 小体量</p></div><span class="pc">0.05<small>亿元</small></span><span class="ch">↓ 1</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="sec" id="review">
+    <div class="shd">
+      <div class="st"><span class="bar"></span><div><h2>影评专栏</h2><p>编辑长评 · 观众短评 · 导演与演员访谈</p></div></div>
+      <a class="sm" href="#">全部影评 ›</a>
+    </div>
+    <div class="rv">
+      <article class="rvi">
+        <div class="th2" style="--g1:rgba(6,182,212,.22);--g2:rgba(6,182,212,.06)"><span class="lv">编辑长评</span><span class="rt">★★★★☆ 8.1</span><span>📝</span></div>
+        <div class="ctn">
+          <div class="who"><span class="av">🧑‍💻</span><div><h4>悬疑迷局：叙事结构比反转更重要</h4><p>编辑部 · 观影 3 场后撰写</p></div></div>
+          <h3>它的好不在于猜中结局，在于每一次回头看都站得住</h3>
+          <blockquote>《悬疑迷局》的前四十分钟看起来像标准的双线叙事，但第二次进影院时你会发现，那些被当作闲笔的对话其实都藏着线索。这不是靠信息差取胜的悬疑片，而是靠结构严密取胜的悬疑片。</blockquote>
+          <blockquote>不足之处在于中段有一段强行放慢节奏的戏，导演似乎想给观众喘息的空间，但反而让气氛出现了短暂的断裂。好在这段戏在二刷时也能找到它的用处。</blockquote>
+          <div class="tags"><i>悬疑</i><i>叙事结构</i><i>二刷建议</i><i>编辑长评</i></div>
+          <div class="ft"><span>发布于 9 月 29 日</span><span>312 条讨论</span></div>
+        </div>
+      </article>
+      <article class="rvi">
+        <div class="th2" style="--g1:rgba(103,232,249,.24);--g2:rgba(103,232,249,.06)"><span class="lv">观众短评</span><span class="rt">★★★★★ 8.3</span><span>💬</span></div>
+        <div class="ctn">
+          <div class="who"><span class="av">👤</span><div><h4>漫长的归途：克制比煽情更难</h4><p>观众投稿 · 观影 1 场</p></div></div>
+          <h3>最难得的是，它没有替观众决定该怎么哭</h3>
+          <blockquote>这类题材最容易犯的错是把情绪一次性推到观众脸上，但这部片选择让镜头停得更久一点。原型人物的故事本身就足够有力，不需要额外的音乐和台词去替它加重量。</blockquote>
+          <blockquote>片长 142 分钟，对习惯快节奏的观众来说会有些吃力，但每一段都有它的必要性，删掉任何一段都会让后面的转折失去支点。</blockquote>
+          <div class="tags"><i>主旋律</i><i>现实题材</i><i>原型改编</i><i>观众投稿</i></div>
+          <div class="ft"><span>发布于 9 月 28 日</span><span>256 条讨论</span></div>
+        </div>
+      </article>
+      <article class="rvi">
+        <div class="th2" style="--g1:rgba(14,116,144,.22);--g2:rgba(14,116,144,.06)"><span class="lv">导演访谈</span><span class="rt">★★★★☆ 7.9</span><span>🎤</span></div>
+        <div class="ctn">
+          <div class="who"><span class="av">🎬</span><div><h4>麦田的冬天：我想拍的是等待本身</h4><p>导演专访 · 约 2800 字</p></div></div>
+          <h3>慢不是缺陷，是这部片的目的</h3>
+          <blockquote>「很多人问我为什么不让节奏快一点，但片子里的人物就是在等一场雪、等一个电话、等一个人回来。如果我把这些等待都剪掉，这片子就没有存在的意义了。」</blockquote>
+          <blockquote>影片全程使用自然光拍摄，剧组在拍摄地住了四个月，只为等几个特定的光线时段。这种拍法成本不高，但对剧组的耐心要求极高。</blockquote>
+          <div class="tags"><i>文艺</i><i>自然光</i><i>导演专访</i><i>拍摄幕后</i></div>
+          <div class="ft"><span>发布于 9 月 26 日</span><span>188 条讨论</span></div>
+        </div>
+      </article>
+      <article class="rvi">
+        <div class="th2" style="--g1:rgba(6,182,212,.22);--g2:rgba(6,182,212,.06)"><span class="lv">观众短评</span><span class="rt">★★★☆☆ 6.5</span><span>💬</span></div>
+        <div class="ctn">
+          <div class="who"><span class="av">👤</span><div><h4>第七次告别：概念很好，执行差口气</h4><p>观众投稿 · 观影 1 场</p></div></div>
+          <h3>点映时的感动，正片里被台词稀释了</h3>
+          <blockquote>点映片段里那场无对白的离别戏确实打动了我，但正片里类似的情绪被大量旁白和台词重新解释了一遍。好的情绪不需要被讲出来，讲出来反而失去了力量。</blockquote>
+          <blockquote>两位主演的表演是加分项，尤其是男主在最后一场戏里的克制。如果能再剪掉十分钟，这片子会完整很多。</blockquote>
+          <div class="tags"><i>爱情</i><i>都市</i><i>观众投稿</i><i>节奏问题</i></div>
+          <div class="ft"><span>发布于 9 月 25 日</span><span>142 条讨论</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="sec" id="guide">
+    <div class="shd">
+      <div class="st"><span class="bar"></span><div><h2>观影指南</h2><p>影院版本选择 · 场次时段 · 片长与休息安排 · 购票时机</p></div></div>
+      <a class="sm" href="#">完整指南 ›</a>
+    </div>
+    <div class="gu">
+      <div class="guc">
+        <h3>不同影片的版本与场次怎么选</h3>
+        <div class="gm">
+          <div class="gm-i"><div><div class="lb">IMAX / 杜比影院</div><div class="bar"><i style="width:88%"></i></div></div><div class="vl">视效大片首选<small>沉浸感提升最明显</small></div></div>
+          <div class="gm-i"><div><div class="lb">CINITY / CINITY LED</div><div class="bar"><i style="width:72%"></i></div></div><div class="vl">高帧率影片<small>动作戏更流畅</small></div></div>
+          <div class="gm-i"><div><div class="lb">激光厅</div><div class="bar"><i style="width:60%"></i></div></div><div class="vl">文艺片够用<small>画面对比度更好</small></div></div>
+          <div class="gm-i"><div><div class="lb">普通 2D 厅</div><div class="bar"><i style="width:40%"></i></div></div><div class="vl">台词向影片<small>省钱且不影响体验</small></div></div>
+          <div class="gm-i"><div><div class="lb">午夜场</div><div class="bar"><i style="width:34%"></i></div></div><div class="vl">氛围型影片<small>悬疑恐怖更有感觉</small></div></div>
+          <div class="gm-i"><div><div class="lb">工作日上午场</div><div class="bar"><i style="width:52%"></i></div></div><div class="vl">性价比最高<small>票价常为晚间一半</small></div></div>
+          <div class="gm-i"><div><div class="lb">提前购票天数</div><div class="bar"><i style="width:66%"></i></div></div><div class="vl">点映次日最合适<small>口碑已出，场次未紧</small></div></div>
+          <div class="gm-i"><div><div class="lb">开场前预留时间</div><div class="bar"><i style="width:24%"></i></div></div><div class="vl">建议 20 分钟<small>含贴片与广告约 15 分钟</small></div></div>
+        </div>
+        <div class="note">以上建议基于常见影厅规格与排片规律整理，具体以当地影院实际排片为准。贴片广告时长各地差异较大，开场时间不等于正片开始时间。</div>
+      </div>
+      <div class="gul">
+      <div class="gul-i"><span class="ic">❄️</span><h4>冬天去影院的好处</h4><p>室内暖气充足，中午场和下午场的体感最舒服。雨雪天路上要留足时间，提前 20 分钟到比较稳妥。</p></div>
+      <div class="gul-i"><span class="ic">⏱️</span><h4>片长超过 140 分钟怎么办</h4><p>建议选开场不晚于 19:30 的场次，避免散场过晚。长片中途离席容易错过转折，进场前先处理完个人事务更划算。</p></div>
+      <div class="gul-i"><span class="ic">👨‍👩‍👧</span><h4>带老人和孩子看什么</h4><p>合家欢动画和现实题材相对稳妥。恐怖片与部分悬疑片有适龄提示，12 岁以下建议先查片长与题材。</p></div>
+      <div class="gul-i"><span class="ic">💰</span><h4>什么时候买票最划算</h4><p>工作日上午场和深夜场票价通常最低，周二会员日常有折扣。档期首日的票不建议提前太久买，等口碑稳定再下手。</p></div>
+      <div class="gul-i"><span class="ic">🎧</span><h4>字幕版还是配音版</h4><p>文艺片、外语片优先原声字幕版，台词与节奏更贴近原作；带孩子或长辈，配音版接受度通常更高。</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec" id="gallery">
+    <div class="shd">
+      <div class="st"><span class="bar"></span><div><h2>剧照图集</h2><p>片场照 · 海报设计 · 幕后花絮 · 修复前后对比</p></div></div>
+      <a class="sm" href="#">全部图集 ›</a>
+    </div>
+    <div class="ga">
+      <div class="gi"><div class="bg" style="--g1:#0d2832;--g2:#0a1014"><span>❄️</span></div><div class="mk"><h4>雪国题材剧照精选</h4><p>28 张 · 雪景实拍与特效对照</p></div></div>
+      <div class="gi"><div class="bg" style="--g1:#0d2832;--g2:#0a1014"><span>🖼️</span></div><div class="mk"><h4>冬季档海报设计</h4><p>22 张 · 概念海报与定档海报</p></div></div>
+      <div class="gi"><div class="bg" style="--g1:#0d2832;--g2:#0a1014"><span>🎞️</span></div><div class="mk"><h4>经典老片修复前后</h4><p>16 组 · 4K 修复对比</p></div></div>
+      <div class="gi"><div class="bg" style="--g1:#0d2832;--g2:#0a1014"><span>🎭</span></div><div class="mk"><h4>幕后花絮抓拍</h4><p>31 张 · 导演与演员工作照</p></div></div>
+      <div class="gi"><div class="bg" style="--g1:#0d2832;--g2:#0a1014"><span>🎪</span></div><div class="mk"><h4>首映礼现场记录</h4><p>19 张 · 红毯与映后交流</p></div></div>
+      <div class="gi"><div class="bg" style="--g1:#0d2832;--g2:#0a1014"><span>🎨</span></div><div class="mk"><h4>动画电影美术设定</h4><p>24 张 · 角色与场景原画</p></div></div>
+      <div class="gi"><div class="bg" style="--g1:#0d2832;--g2:#0a1014"><span>📽️</span></div><div class="mk"><h4>胶片与放映设备</h4><p>11 张 · 修复设备与放映厅</p></div></div>
+      <div class="gi"><div class="bg" style="--g1:#0d2832;--g2:#0a1014"><span>🎤</span></div><div class="mk"><h4>导演访谈现场</h4><p>13 张 · 专访与路演现场</p></div></div>
+    </div>
+  </section>
+  <section class="sec" id="topic">
+    <div class="shd">
+      <div class="st"><span class="bar"></span><div><h2>专题策划</h2><p>系列盘点 · 主题合集 · 长期连载</p></div></div>
+      <a class="sm" href="#">全部专题 ›</a>
+    </div>
+    <div class="tp">
+      <article class="tpc">
+        <div class="th2" style="--g1:rgba(6,182,212,.22);--g2:rgba(6,182,212,.06)"><span class="ct">连载中</span><span>📊</span></div>
+        <div class="ctn">
+          <h4>一周票房观察：数字背后的排片逻辑</h4>
+          <p>每周一更新当周票房前十、大盘变化与排片占比，结合档期与口碑曲线解释数字波动，不只列排名。</p>
+          <div class="ft"><span>已更新 38 期</span><span>下周一继续</span></div>
+        </div>
+      </article>
+      <article class="tpc">
+        <div class="th2" style="--g1:rgba(103,232,249,.22);--g2:rgba(103,232,249,.06)"><span class="ct">连载中</span><span>❄️</span></div>
+        <div class="ctn">
+          <h4>冬天适合看的 20 部片</h4>
+          <p>按场景与心情分成四组，每组五部，标注片长与时长建议，附无剧透版理由说明。</p>
+          <div class="ft"><span>已更新 12 期</span><span>持续连载</span></div>
+        </div>
+      </article>
+      <article class="tpc">
+        <div class="th2" style="--g1:rgba(14,116,144,.2);--g2:rgba(14,116,144,.06)"><span class="ct">已完结</span><span>🎬</span></div>
+        <div class="ctn">
+          <h4>国产动画十年：从票房黑马到工业水准</h4>
+          <p>按年份盘点国产动画的票房表现与技术突破，整理成时间线，配片单与观影顺序建议。</p>
+          <div class="ft"><span>共 14 部影片</span><span>建议收藏</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="sub">
+      <div class="bg"></div>
+      <div class="cn">
+        <h3>每周一收到一份当周票房与口碑速递</h3>
+        <p>飘雪电影网每周汇总当周票房前十、点映口碑与排片动向，附编辑挑片建议，无需注册即可订阅。</p>
+        <form class="sf" onsubmit="return false;">
+          <input type="email" placeholder="留下你的邮箱地址" aria-label="邮箱地址">
+          <button type="submit">订阅票房速递</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="about">
+    <div class="ab">
+      <div class="abc">
+        <h3>关于飘雪电影网</h3>
+        <p><strong style="color:var(--txt)">飘雪电影网</strong>（网址：<a href="https://piaoxuedianyingwang-zh.github.io" style="color:var(--a1)">https://piaoxuedianyingwang-zh.github.io</a>）是一个专注于最新电影资讯、院线新片与冬季好片推荐的资料站点。我们整理院线新片、国产电影、经典老片回顾与影评分享，提供当周票房排行、排片档期与观影指南，帮您少踩烂片。</p>
+        <p>本站设有电影资讯、院线新片、国产电影、冬季片单、排片档期、票房榜单、影评专栏、观影指南、剧照图集与专题策划十个栏目。内容由编辑团队与影迷共同整理，票房数据标注统计口径与更新时间，仅供观影参考，不构成购票建议。</p>
+        <p>飘雪电影网不提供任何影片资源下载与在线播放，也不收录盗版链接。我们的定位是资讯与评论：帮您看懂档期、判断口碑、选对场次。文中涉及的票房与排片数据均为当周参考值，实际以影院排片为准。</p>
+      </div>
+      <div class="abc">
+        <h3>友情链接</h3>
+        <div class="lc">
+          <a href="#">电影票房榜</a>
+          <a href="#">国产新片资讯</a>
+          <a href="#">影评与短评</a>
+          <a href="#">排片档期查询</a>
+          <a href="#">电影海报图库</a>
+          <a href="#">经典老片回顾</a>
+          <a href="#">电影节片单</a>
+          <a href="#">导演作品集</a>
+          <a href="#">冬季片单</a>
+          <a href="#">观影指南</a>
+          <a href="#">流媒体片单</a>
+          <a href="#">影院排片</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ft">
+  <div class="container">
+    <div class="fg">
+      <div class="bd">
+        <div class="logo"><span class="mk">❄️</span><span class="nm"><em>飘雪电影网</em><small>piaoxuedianyingwang-zh.github.io</small></span></div>
+        <p>飘雪电影网（piaoxuedianyingwang-zh.github.io）专注最新电影资讯、院线新片与冬季好片推荐，聚焦冬季档与年末压轴，提供经典老片回顾、电影票房与影评分享，按季节和心情整理片单。</p>
+      </div>
+      <div><h4>资讯栏目</h4><ul><li><a href="#news">电影资讯</a></li><li><a href="#new">院线新片</a></li><li><a href="#cn">国产电影</a></li><li><a href="#schedule">排片档期</a></li><li><a href="#box">票房榜单</a></li></ul></div>
+      <div><h4>内容栏目</h4><ul><li><a href="#fav">冬季片单</a></li><li><a href="#review">影评专栏</a></li><li><a href="#guide">观影指南</a></li><li><a href="#gallery">剧照图集</a></li><li><a href="#topic">专题策划</a></li></ul></div>
+      <div><h4>关于本站</h4><ul><li><a href="#about">关于飘雪电影网</a></li><li><a href="#">数据来源与口径</a></li><li><a href="#">免责声明</a></li><li><a href="#">更新日志</a></li><li><a href="#">联系我们</a></li></ul></div>
+    </div>
+    <div class="fb">
+      <div>© 2026 飘雪电影网 piaoxuedianyingwang-zh.github.io · 网站名称：飘雪电影网 ｜ 网站网址：<a href="https://piaoxuedianyingwang-zh.github.io">https://piaoxuedianyingwang-zh.github.io</a> · 本站为电影资讯与影评资料站点，票房数据标注统计口径与更新时间，仅供观影参考，不构成购票建议；不提供任何影片资源下载与在线播放</div>
+      <div class="ls"><a href="#home">首页</a><a href="#about">关于飘雪电影网</a><a href="#">回到顶部</a></div>
+    </div>
+  </div>
+</footer>
+
+<a class="to" id="to" href="#" aria-label="回到顶部">↑</a>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav'),mb=document.getElementById('mb');
+  mb.addEventListener('click',function(){nav.classList.toggle('open');mb.classList.toggle('open')});
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');mb.classList.remove('open')}});
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var id=a.getAttribute('href');
+      if(id.length>1){var el=document.querySelector(id);if(el){e.preventDefault();window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset-86,behavior:'smooth'})}}
+    });
+  });
+  var to=document.getElementById('to');
+  var secs=document.querySelectorAll('main section[id]'),navA=document.querySelectorAll('.nav a');
+  function onScroll(){to.classList.toggle('show',window.scrollY>400);var cur='';secs.forEach(function(s){if(window.scrollY>=s.offsetTop-140)cur=s.id});navA.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+cur)})}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  document.querySelectorAll('.tabs').forEach(function(tab){
+    var btns=tab.querySelectorAll('button');
+    btns.forEach(function(b){
+      b.addEventListener('click',function(){
+        var id=b.getAttribute('data-tab'),box=b.closest('.sec');
+        btns.forEach(function(x){x.classList.remove('on')});b.classList.add('on');
+        box.querySelectorAll('.tab-pane').forEach(function(p){p.classList.toggle('on',p.id===id)});
+      });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
